@@ -1,0 +1,392 @@
+/* Styles pour la navbar sur les bananes */
+body {
+  margin: 0;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: rgba(
+    254,
+    236,
+    137,
+    1
+  ); /* Couleur jaune non transparente au départ */
+  color: #333;
+  padding: 10px 0;
+  transition: background-color 0.3s ease; /* Transition pour l'animation du changement de couleur */
+  /* Vos autres styles pour la barre de navigation */
+}
+
+.container21 {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 100px;
+  height: auto;
+  margin-right: 10px; /* Marge à droite du logo pour l'espacement */
+}
+
+.company-name {
+  font-size: 20px;
+  font-weight: bold;
+  margin-right: 20px; /* Marge à droite du nom de la société pour l'espacement */
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  margin-left: auto; /* Déplace les liens vers la droite */
+}
+
+.nav-links li {
+  margin-right: 20px; /* Ajustez l'espacement entre les éléments de la nav selon vos besoins */
+}
+
+.nav-links a {
+  color: #000000;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #15b400;
+}
+
+.toggle-button {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+}
+
+.bar {
+  height: 3px;
+  width: 25px;
+  background-color: #000000;
+  margin: 4px 0;
+  transition: transform 0.3s ease;
+}
+
+/* Media query pour la version mobile */
+@media (max-width: 768px) {
+  /* ... (styles pour la version mobile) */
+}
+
+/* Styles pour les sections Accueil et À Propos */
+.categorie1 {
+  width: 80%;
+  margin: 20px auto;
+}
+
+.category1 {
+  margin-bottom: 40px;
+  border-bottom: 20px solid #feec89;
+  display: inline-block;
+}
+
+.category1 h2 {
+  font-size: 24px;
+}
+
+.category-accueil {
+  text-align: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  border-bottom: 15px solid #feec89;
+  display: inline-block;
+}
+
+.accueil-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.description1 {
+  width: 50%;
+  text-align: left;
+}
+
+.image-bananes {
+  width: 25%;
+  text-align: right;
+}
+
+.image-bananes img {
+  max-width: 70%;
+  height: auto;
+}
+
+/* Styles pour la section À Propos */
+.categorie2 {
+  width: 80%;
+  margin: 20px auto;
+}
+
+.category2 {
+  margin-bottom: 20px;
+  border-bottom: 2px solid #feec89;
+  display: inline-block;
+}
+
+.category2 h1 {
+  font-size: 24px;
+}
+
+.category-a-propos {
+  text-align: center;
+  border-bottom: 15px solid #feec89;
+  display: inline-block;
+}
+
+.a-propos-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.description2 {
+  width: 80%;
+  text-align: justify;
+}
+
+/* Styles pour la section Galerie */
+.categorie3 {
+  width: 80%;
+  margin: 20px auto;
+}
+
+.category3 {
+  margin-bottom: 40px;
+  border-bottom: 2px solid #feec89;
+  display: inline-block;
+}
+
+.category3 h2 {
+  font-size: 24px;
+}
+
+.galerie-content {
+  text-align: center;
+  border-bottom: 20px solid #feec89;
+  display: inline-block;
+}
+
+.image-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Crée une grille avec 4 colonnes */
+  grid-gap: 30px; /* Espacement entre les images */
+  justify-items: center; /* Centre horizontalement */
+  align-items: center; /* Centre verticalement */
+}
+
+.galerie-image {
+  max-width: 50%; /* Utilisation de max-width pour que les images s'adaptent à la grille */
+  height: 80%;
+}
+
+/* Styles pour la section Localisation */
+.categorie4 {
+  width: 80%;
+  margin: 40px auto;
+  text-align: center; /* Centrer le contenu de la section */
+}
+
+.category4 {
+  margin-bottom: 30px;
+}
+
+.category4 h1 {
+  font-size: 28px;
+  color: #000000;
+  border-bottom: 2px solid #feec89;
+  display: inline-block;
+  padding-bottom: 8px;
+  margin-bottom: 20px;
+}
+
+.localisation-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centrer horizontalement */
+  border-bottom: 0px solid #feec89;
+  display: inline-block;
+  display: inline-block;
+}
+
+.map {
+  width: 90%;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.map p {
+  margin: 20px 0;
+  color: #000000;
+  font-size: 18px;
+}
+
+.map a {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #feec89;
+  color: #000000;
+  text-decoration: none;
+  border-radius: 30px;
+  transition: background-color 0.3s ease;
+}
+
+.map a:hover {
+  background-color: #fdd75c;
+}
+
+/* Styles pour la section Équipe */
+.categorie4 {
+  width: 80%;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.category4 {
+  margin-bottom: center;
+}
+
+.category4 h1 {
+  font-size: 24px;
+}
+
+.equipe-content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.membre-equipe {
+  width: 30%;
+  margin-bottom: center;
+}
+
+.membre-equipe img {
+  width: 50%;
+  height: auto;
+  border-radius: 100%; /* Pour des images rondes */
+}
+
+.membre-equipe h3 {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.membre-equipe p {
+  font-style: italic;
+  color: #888;
+}
+
+/* Styles pour la section Contact */
+.categorie5 {
+  width: 80%;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.category5 h1 {
+  font-size: 24px;
+  text-align: center; /* Centrer le contenu de la section */
+}
+
+.contact-info {
+  margin-bottom: 20px;
+}
+
+.contact-form {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h2 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+}
+
+.contact-form input[type="submit"] {
+  background-color: #feec89;
+  color: #333;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form input[type="submit"]:hover {
+  background-color: #fddc69;
+}
+
+.container {
+  width: 80%; /* Ajustez la largeur si nécessaire */
+  margin: 0 auto;
+}
+
+/* Ajoutez ce style pour rendre la barre de navigation transparente quand l'utilisateur défile vers le bas */
+.scrolled {
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+  box-shadow: none; /* Vous pouvez également supprimer l'ombre si nécessaire */
+}
+
+.scrolled {
+  background-color: rgba(
+    254,
+    236,
+    137,
+    0.7
+  ); /* Couleur jaune partiellement transparente */
+  /* Autres styles pour la barre de navigation lorsque scrollée */
+}
+
+/* Style pour la section de crédits */
+.credits {
+  background-color: #feec89; /* Couleur de fond pour la section de crédits */
+  color: #333; /* Couleur du texte */
+  padding: 3px 0;
+  text-align: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  width: 100%; /* Prend toute la largeur disponible */
+}
+
+.credits p {
+  margin-bottom: 15px;
+}
+
+.credits span {
+  font-weight: bold;
+  color: #000;
+}
