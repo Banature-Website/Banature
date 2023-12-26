@@ -122,7 +122,7 @@ body {
 }
 
 .image-bananes img {
-  max-width: 70%;
+  max-width: 100%;
   height: auto;
 }
 
@@ -193,8 +193,8 @@ body {
 }
 
 .galerie-image {
-  max-width: 50%; /* Utilisation de max-width pour que les images s'adaptent à la grille */
-  height: 80%;
+  max-width: 100%; /* Utilisation de max-width pour que les images s'adaptent à la grille */
+  height: auto;
 }
 
 /* Styles pour la section Localisation */
